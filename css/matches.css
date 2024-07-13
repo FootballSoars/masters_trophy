@@ -1,0 +1,201 @@
+body{
+    background: url(../images/bg.jpg) no-repeat fixed;
+    font-family: "Protest Guerrilla", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.top{
+    background: rgb(69, 0, 99);
+    width: 100%;
+    height: 200px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    margin: 0 ;
+    padding-top: 10px ;
+    float: left;
+    display:flex ;
+}
+.image{
+    width: 70px;
+    height: 180px;
+    background: url(../images/trophy.png) no-repeat;
+}
+h1{
+    margin: 50px 0 0 40px;
+    font-size: 27px;
+    color: #FFF;
+}
+nav {
+	width: auto;
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+    line-height: 80px;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-top: 50px;
+	padding: 15px;
+	font-size: 20px;
+}
+
+nav ul li a {
+    border-radius: 15px ;
+    padding: 30px;
+	color: #FFF;
+	text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+nav ul li a:hover {
+    background:green;
+	color: #FF0;
+	text-decoration: underline;
+}
+#box{
+    width: 100%;
+}
+.container_2{
+    margin: 0 auto;
+    width: 1200px;
+}
+.strip{
+    border: 2px dashed #000;
+    border-radius: 15px;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 1180px;
+    height: 60px;
+    background: yellow;
+}
+.strip h1{
+    text-align: center;
+    padding-top:0 ;
+    margin: 0 ;
+    font-size: 24px;
+    
+}
+.strip h2{
+    text-align: center;
+    padding-top:0 ;
+    margin: 0 ;
+    font-size: 24px;
+    color: #000;
+}
+h3{
+    color: rgb(0, 30, 255);
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+@media only screen and (max-width: 576px) {
+    body{
+        
+        font-family: "Protest Guerrilla", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        }
+
+        .top{
+            background: rgb(69, 0, 99);
+            width: 100%;
+            height: 100px;
+        }
+        .logo{
+            margin: 0 ;
+            padding-top: 5px ;
+            float: left;
+            display:flex ;
+        }
+        .image{
+            background: url(../images/trophy_s.png) no-repeat;
+        }
+        h1{
+            margin: 35px 0 0 0px;
+            font-size: 6px;
+            color: #FFF;
+        
+        }
+        nav {
+            width: auto;
+            float: right;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            line-height: 60px;
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px;
+            font-size: 5px;
+        }
+        
+        nav ul li a {
+            border-radius: 5px ;
+            padding: 3px;
+            color: #FFF;
+            text-decoration: none;
+            transition: all 0.6s ease;
+        }
+        
+        nav ul li a:hover {
+            background:green;
+            color: #FF0;
+            text-decoration: underline;
+        }
+        .container_2{
+            margin: 0 auto;
+            width: 100%;
+        }
+        .strip{
+            border: 2px dashed #000;
+            border-radius: 5px;
+            align-items:;
+            margin-top:10px ;
+            margin-left: 5px;
+            margin-bottom:10px;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 310px;
+            height: 45px;
+            background: skyblue;
+        }
+        .strip h1{
+            text-align: center;
+            padding-top:0 ;
+            margin: 0 0 5px 0;
+            font-size: 14px;
+           color: rgb(0, 0, 114);
+        }
+        .strip h2{
+            text-align: center;
+            padding-top:0 ;
+            margin: 0 ;
+            font-size: 14px;
+            color: rgb(0, 0, 114);
+        }
+        h3{
+            color: rgb(0, 30, 255);
+            font-size: 24px;
+            margin: 0;
+            text-align: left;
+        }
+}
