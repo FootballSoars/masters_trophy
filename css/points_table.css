@@ -130,7 +130,7 @@ tr:last-child{
 
         .top{
             background: rgb(69, 0, 99);
-            width: 100%;
+            width: 430px;
             height: 100px;
         }
         .logo{
@@ -193,7 +193,8 @@ tr:last-child{
             
             border-collapse: collapse;
             border-spacing: 0;
-            width: 100%;
+        
+            width: 425px;
             border: 1px solid #ddd;
         }
         th, td{
