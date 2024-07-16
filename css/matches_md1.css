@@ -61,6 +61,38 @@ nav ul li a:hover {
 	color: #FF0;
 	text-decoration: underline;
 }
+.md{
+    width: 1200px;
+    height: 50px;
+    background: rgb(69, 0, 99);
+}
+.md nav {
+    width: auto;
+	float: left;
+}
+.md nav ol {
+    margin: 0;
+	padding: 0;
+    line-height: 50px;
+	list-style: none;
+}
+.md nav ol li {
+    display: inline-block;
+    margin: 0 ;
+    font-size: 18px;
+}
+.md nav ol li a{
+    
+    padding: 16px 100px;
+	color: #FFF;
+	text-decoration: none;
+    transition: all 0.6s ease;
+}
+.md nav ol li a:hover {
+    background:green;
+	color: #FF0;
+	text-decoration: underline;
+}
 #box{
     width: 100%;
 }
@@ -83,7 +115,7 @@ nav ul li a:hover {
     padding-top:0 ;
     margin: 0 ;
     font-size: 24px;
-    color: #000;
+    
 }
 .strip h2{
     text-align: center;
@@ -98,6 +130,20 @@ h3{
     text-align: center;
     margin: 0;
 }
+h6{
+    color: rgb(255, 47, 0);
+    font-size: 36px;
+    text-align: center;
+    margin: 0; 
+}
+h4{
+    color: rgb(3, 110, 7);
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+
 @media only screen and (max-width: 576px) {
     body{
         
@@ -145,19 +191,50 @@ h3{
             display: inline-block;
             margin-top: 15px;
             padding: 5px;
-            font-size: 10px;
+            font-size: 15px;
         }
         
         nav ul li a {
             border-radius: 5px ;
             padding: 3px;
             color: #FFF;
-            font-size: 15px;
             text-decoration: none;
             transition: all 0.6s ease;
         }
         
         nav ul li a:hover {
+            background:green;
+            color: #FF0;
+            text-decoration: underline;
+        }
+        .md{
+            width: 576px;
+            height: 50px;
+            background: rgb(69, 0, 99);
+        }
+        .md nav {
+            width: auto;
+            float: left;
+        }
+        .md nav ol {
+            margin: 0;
+            padding: 0;
+            line-height: 10px;
+            list-style: none;
+        }
+        .md nav ol li {
+            display: inline-block;
+            margin: 0 auto;
+            font-size: 10px;
+        }
+        .md nav ol li a{
+            
+            padding: 15px 43px;
+            color: #FFF;
+            text-decoration: none;
+            transition: all 0.6s ease;
+        }
+        .md nav ol li a:hover {
             background:green;
             color: #FF0;
             text-decoration: underline;
@@ -172,7 +249,6 @@ h3{
             align-items:;
             margin-top:10px ;
             margin-left: 5px;
-            margin-right: 5px;
             margin-bottom:10px;
             box-sizing: border-box;
             padding: 10px;
@@ -194,10 +270,26 @@ h3{
             font-size: 14px;
             color: rgb(0, 0, 114);
         }
+        h6{
+            color: rgb(255, 102, 0);
+            font-size: 24px;
+            text-align: left;
+            padding-left: 245px ;
+        }
         h3{
             color: rgb(0, 30, 255);
-            font-size: 16px;
-            padding-left: 250px;
+            font-size: 24px;
+            margin: 0;
+            width: 200px;
+            padding-left: 245px;
             text-align: left;
+        }
+        h4{
+            color: rgb(3, 110, 7);
+            font-size: 24px;
+            width: 300px;
+            text-align: left;
+            padding-left: 225px;
+            margin: 0;
         }
 }

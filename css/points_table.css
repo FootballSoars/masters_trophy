@@ -53,6 +53,7 @@ nav ul li a {
     border-radius: 15px ;
     padding: 30px;
 	color: #FFF;
+    font-size: 20px;
 	text-decoration: none;
     transition: all 0.6s ease;
 }
@@ -130,7 +131,7 @@ tr:last-child{
 
         .top{
             background: rgb(69, 0, 99);
-            width: 430px;
+            width: 576px;
             height: 100px;
         }
         .logo{
@@ -171,6 +172,7 @@ tr:last-child{
             border-radius: 5px ;
             padding: 3px;
             color: #FFF;
+            font-size: 15px;
             text-decoration: none;
             transition: all 0.6s ease;
         }
@@ -194,7 +196,7 @@ tr:last-child{
             border-collapse: collapse;
             border-spacing: 0;
         
-            width: 425px;
+            width: 566px;
             border: 1px solid #ddd;
         }
         th, td{
