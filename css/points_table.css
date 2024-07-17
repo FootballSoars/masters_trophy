@@ -3,6 +3,7 @@ body{
     font-family: "Protest Guerrilla", sans-serif;
     margin: 0;
     padding: 0;
+    cursor: url(../images/pb.png), pointer;
 }
 .top{
     background: rgb(69, 0, 99);
@@ -56,6 +57,7 @@ nav ul li a {
     font-size: 20px;
 	text-decoration: none;
     transition: all 0.6s ease;
+    cursor: url(../images/pw.png), pointer;
 }
 
 nav ul li a:hover {
@@ -97,6 +99,7 @@ table{
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
+    cursor: url(../images/pv.png), pointer;
 }
 th{
     text-align: center;
