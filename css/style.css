@@ -134,7 +134,7 @@ p::after {
     content: counter(num);
 }
 p:hover {
-    --num:30;
+    --num:56;
 }
 
 @media only screen and (max-width: 576px) {
@@ -259,7 +259,7 @@ p:hover {
         }
         p{
             color: skyblue;
-            margin: 0 auto;
+            margin: 10px auto;
             width: 80px;
             background: none;
             transition: --num 5s;
@@ -270,6 +270,6 @@ p:hover {
             content: counter(num);
         }
         p:hover {
-            --num:30;
+            --num:56;
         }
 }
