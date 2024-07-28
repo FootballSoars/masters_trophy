@@ -134,7 +134,7 @@ p::after {
     content: counter(num);
 }
 p:hover {
-    --num:84;
+    --num:106;
 }
 
 @media only screen and (max-width: 576px) {
@@ -270,6 +270,6 @@ p:hover {
             content: counter(num);
         }
         p:hover {
-            --num:84;
+            --num:106;
         }
 }
