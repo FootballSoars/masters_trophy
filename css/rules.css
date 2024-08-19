@@ -1,214 +1,305 @@
-body{
-    background: url(../images/bg.jpg) no-repeat fixed;
-    font-family: "Protest Guerrilla", sans-serif;
-    margin: 0;
-    padding: 0;
-    cursor: url(../images/pb.png), pointer;
+@font-face {
+    font-family: 'efootball_stencilregular';
+    src: url('../font/efootballstencil-regular-webfont.woff') format('woff2'),
+         url('../font/efootballstencil-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-.top{
-    background: rgb(69, 0, 99);
-    width: 100%;
-    height: 200px;
+*{
+    font-family: 'efootball_stencilregular';
 }
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
-.logo{
-    margin: 0 ;
-    padding-top: 10px ;
-    float: left;
-    display:flex ;
-}
-.image{
-    width: 70px;
-    height: 180px;
-    background: url(../images/trophy.png) no-repeat;
-}
-h1{
-    margin: 50px 0 0 40px;
-    font-size: 27px;
-    color: #FFF;
-}
-nav {
-	width: auto;
-	float: right;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0;
-    line-height: 80px;
-	list-style: none;
-}
-
-nav ul li {
-	display: inline-block;
-	margin-top: 50px;
-	padding: 15px;
-	font-size: 20px;
-}
-
-nav ul li a {
-    border-radius: 15px ;
-    padding: 30px;
-	color: #FFF;
-	text-decoration: none;
-    transition: all 0.6s ease;
-    cursor: url(../images/pw.png), pointer;
-}
-
-nav ul li a:hover {
-    background:green;
-	color: #FF0;
-	text-decoration: underline;
-}
-#box{
-    width: 100%;
-}
-.container_2{
-    margin: 0 auto;
-    width: 1200px;
-}
-.strip{
-    border: 2px dashed #000;
-    border-radius: 15px;
-    margin: 10px 0 0 0;
-    box-sizing: border-box;
-    padding: 10px;
-    width: 1180px;
-    height: 1550px;
-    background: yellow;
-    cursor: url(../images/pv.png), pointer;
-}
-.strip h1{
+#pre-loader{
+    background: rgba(0, 0, 0, 0.889);
+    display: flex;
     text-align: center;
-    padding-top:0 ;
-    margin: 0 ;
-    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e60000;
+    }
+    25%{
+        transform: rotate(90deg);
+        box-shadow: 1px 5px 2px #48ff00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #0037ff;
+    }
+    75%{
+        transform: rotate(270deg);
+        box-shadow: 1px 5px 2px #f2ff00;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #a900e6;
+    }
+}
+#ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(red, green, blue, 0.5);
+}
+span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+}
+body{
+    background: rgb(0, 108, 102);
+}
+.placeholder-one {
+    display: inline-block;
+    min-height: 3em;
+    color: #ffffff;
+    min-width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-image: linear-gradient(#140055,#3e2200);
+    vertical-align: middle;
+    cursor: wait;
+    text-decoration: none;   
+}
+.placeholder-two {
+    display: inline-block;
+    min-height: 3em;
+    color: #ffffff;
+    min-width: 40%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-image: linear-gradient(#140055,#3e2200);
+    vertical-align: middle;
+    cursor: wait;
+    text-decoration: none;   
+}
+
+.ned {
+    color: #FF671F;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.arg {
+    color: #6CACE4;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.fra{
+    color: #5f4afc;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.por{
+    color: #1fba00;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.esp{
+    color: #ffdd00;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.ger{
+    color: #cb0000;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.bg-body-tertiary{
+    background: rgb(207, 124, 0) !important;
+}
+.navbar-brand {
+    font-size: 2rem;
+    color: rgb(56, 55, 55);
+}
+.navbar-brand em {
+    font-style: normal;
+    font-size: 2rem;
+    color: rgb(63, 0, 86);
+}
+.navbar-nav a {
+    font-size: 1.5rem;
     
 }
-.strip h2{
+.left h4 {
+    font-size: 2rem;
     text-align: center;
-    padding-top:0 ;
-    margin: 0 ;
-    font-size: 24px;
-    color: #FFF;
+    color: black;
 }
-h3{
-    color: rgb(0, 30, 255);
-    font-size: 36px;
-    text-align: center;
+.dropdown-menu{
+    background: rgb(255, 181, 44);
+}
+.container-fluid{
     margin: 0;
+    padding: 0;
+    width: 100%;
+    
 }
-p{
-    font-size: 24px;
+#banner{
+    position: relative;
+}
+#banner img{
+    filter: brightness(40%);
+}
+#banner h5 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 6rem;
+    max-width: 100%;
+}
+#banner p{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+#carouselExampleAutoplaying{
+    position: relative;
+    margin-top: -4rem;
+}
+#share-bar {
+    display: block;
+    position: fixed;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+.sharing-providers{
+    margin: 0;
+    padding: 0;
+    transition: 1s all;
+}
+.sharing-providers > li {
+    border-radius: 50%;
+    margin-left: 0px;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 255, 0);
+    transition: 0.5s all;
+}
+.fa-brands {
+    color: rgb(35, 0, 95);
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+.card-body h5{
+    font-size: 1.3rem;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 ;
+    border: 2px solid #000000;
+}
+th{
+    
+    background: #ddd;
+    font-size: 18px;
+    padding: 0;
+    
+}
+footer {
+    background: rgb(0, 0, 57);
+}
+footer h4 {
+    color: rgb(255, 85, 0);
+}
+footer p{
+    color: white;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 992px) {
+    #carouselExampleAutoplaying{
+        position: relative;
+        margin-top: -4rem;
+    }
+    .bg-body-tertiary{
+        background: rgb(124, 207, 0) !important;
+    }
+    .dropdown-menu{
+        background: rgb(125, 255, 44);
+    }
+    #banner h5 {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+    #banner p{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+    footer h4  {
+        color: rgb(21, 255, 0);
+        text-align: center;
+    }
+    footer p{
+        color: white;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #carouselExampleAutoplaying{
+        position: relative;
+        margin-top: -4rem;
+    }
+    #banner h5 {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    #banner p{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
 }
 @media only screen and (max-width: 576px) {
-    body{
-        
-        font-family: "Protest Guerrilla", sans-serif;
-        margin: 0;
-        padding: 0;
+    #carouselExampleAutoplaying{                                                                                                    
+        position: relative;
+        margin-top: -2rem;
     }
-    .container{
-        width: 100%;
-        }
-
-        .top{
-            background: rgb(69, 0, 99);
-            width: 576px;
-            height: 100px;
-        }
-        .logo{
-            margin: 0 ;
-            padding-top: 5px ;
-            float: left;
-            display:flex ;
-        }
-        .image{
-            background: url(../images/trophy_s.png) no-repeat;
-        }
-        h1{
-            margin: 35px 0 0 0px;
-            font-size: 6px;
-            color: #FFF;
+    #banner h5 {
+        margin-top: 1rem;
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
         
-        }
-        nav {
-            width: auto;
-            float: right;
-        }
+    }
+    #banner p{
+        color: white;
+        font-size: 1rem;
+        text-align: center;
         
-        nav ul {
-            margin: 0;
-            padding: 0;
-            line-height: 60px;
-            list-style: none;
-        }
-        
-        nav ul li {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 5px;
-            font-size: 10px;
-        }
-        
-        nav ul li a {
-            border-radius: 5px ;
-            padding: 3px;
-            color: #FFF;
-            font-size: 15px;
-            text-decoration: none;
-            transition: all 0.6s ease;
-        }
-        
-        nav ul li a:hover {
-            background:green;
-            color: #FF0;
-            text-decoration: underline;
-        }
-        .container_2{
-            margin: 0 auto;
-            width: 100%;
-        }
-        .strip{
-            border: 2px dashed #000;
-            border-radius: 5px;
-            margin-top:10px ;
-            margin-right: 5px;
-            margin-left: 5px;
-            margin-bottom:10px;
-            box-sizing: border-box;
-            padding: 10px;
-            width: 566px;
-            height: 1105px;
-            background: skyblue;
-        }
-        .strip h1{
-            text-align: center;
-            padding-top:0 ;
-            margin: 0 0 5px 0;
-            font-size: 14px;
-           color: rgb(0, 0, 114);
-        }
-        .strip h2{
-            text-align: center;
-            padding-top:0 ;
-            margin: 0 ;
-            font-size: 14px;
-            color: rgb(0, 0, 114);
-        }
-        h3{
-            color: rgb(0, 30, 255);
-            font-size: 26px;
-            padding-left: 250px;
-            text-align: left;
-        }
-        p{
-            padding:0 ;
-            margin: 0 ;
-            font-size: 15px;
-            color: rgb(0, 0, 114);
-        }
+    }
 }

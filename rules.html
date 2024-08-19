@@ -1,61 +1,200 @@
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOTBALL SOARS MASTERS TROPHY</title>
-    <link rel="icon" href="images/fs.png">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MASTERS TROPHY</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/rules.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <header class="top">
-        <div class="container">
-            <div class="logo">
-                <div class="image"></div>
-                <h1>FOOTBALL SOARS<br> MASTERS TROPHY</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Participants</a></li>
-                    <li><a href="points_table.html">Points Table</a></li>
-                    <li><a href="#">Rules</a></li>
-                    <li><a href="matches_ko.html">Matches</a></li>
-                    <li style="padding-right: 0;"><a href="awards_live_les.html">Awards Live</a></li>
+  <body>
+    <!--Preloader-->
+    <div id="pre-loader">
+      <div id="ring"></div>
+      <span>Loading...</span>
+  </div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#" data-aos="fade-right" data-aos-duration="2000">Masters<em>Trophy</em></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="points_table.html">Points Table</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="clips.html">Clips</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Match-Days
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="matchday1.html">Match-Day-1</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-2</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-3</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-4</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-5</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-6</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-7</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-8</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-9</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-10</a></li>
+                    </ul>
+                  </li>
                 </ul>
-            </nav>
-        </div>
-     </header>
-
-     <section id="box">
-        <div class="container_2">
-            <h3>RULES</h3>
-            <div class="strip" style=" margin-top: 59px;">
-                <p>
-                    MATCH SETTINGS<br><br> 1.Match Type :- STANDARD <br>2.Match Duration :- 6min (Default) <br>3.Injuries :- ON (Default) <br>
-                    4.Extra-Time :- OFF (*ON in Knockouts) <br>5.Penalties :- OFF (*ON in Knockouts) <br>6.Substitutions :- 5 (Default)(+1 in Extra-Time) <br>
-                    7.Interval :- 5 (Default) <br>8.Player Condition :- Random (Both) <br>9.Deadlines :- 12:00am - 11:59pm (24 Hrs Only)<br><br>
-                    TIME RULES <br><br> -If Match disconnects Between 0-10 Game minutes, then players can start a fresh match again<br><br> 
-                    -If Match disconnects Between 11-45 Game minutes, then play the remaining time left with +3min Additional. <br><br>
-                    -If Match disconnects Between 46-90 Game minutes, then play the remaining time left with +4min Additional. <br><br>
-                    CLAIM RULES <br><br> -Continous Backpass is strictly prohibited <br>(LB-CB-DMF-RB-GK). If opposition can provide video proof then rematch
-                    will be played. Without Video proof no claim will be given to anyone. <br><br>-Both the players should be responsible for their match completion.
-                    if someone provide Screenshot of opponent text that he/she is ignoring then the player will be awarded W/O.(*Screenshot after deadline will not be accepted 
-                    strictly) <br><br>-WalkOver will be 1-0 win and W/O Goals will not be counted in Golden Boot Award. <br><br>-If Opponent left in between the match after trailing goals and denied to play remaining the opposition will get goals
-                    according to below example:- (Suppose 20:00 played [Player 1 (2-0) Player 2], If Player 2 denies to play remaining the as per calculation Player 1 will get 9-0 win) <br><br>
-                    OTHER RULES <br><br>-Time will be strictly maintained no extension in deadlines. If any Matches left after deadline then it will be 0-0. And in case of KO matches if deadline extends then the player with better stats and positon will be taken forward for further rounds.
-                    Screenshots counter will be valid within deadline only.
-                    No Screenshots will be considered after deadline. <br><br>-6 Groups will be Divided with 4 players each. Top 2 Players from each group followed by the best 4 Third Positions will get the Qualification into eFOOTBALL MASTERS TROPHY Round of 16. <br><br>-Mis-Behaving with other players is stictly prohibited. {Punishment:- Yellow Card(for little misbehave) Red Card(for using slangs and will be kicked out of the tournament.)}
-                    <br><br>-All the Participant will meet each other at the group stage once. <br><br>-----------  <i class="fa-solid fa-heart"></i>ALL THE BEST TO ALL AND WISH YOU ALL A HAPPY TOURNAMENT.<i class="fa-solid fa-heart"></i>  -----------
-
-                </p>
+              </div>
             </div>
+          </nav>
+    </div>
+    
+    <section id="banner">
+        <div class="container-Fluid">
+                <img src="images/banner.jpg" alt="" class="img-fluid">
             
+                <div class="card-img-overlay">
+                    <div class="container">
+                    <h5 class="card-title" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">WELCOME</h5>
+                    <p class="card-title" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">to Masters Trophy Website</p>
+                </div>
+            </div>
         </div>
-     </section>
+    </section>
 
     
-</body>
+
+    <section>
+        <div class="chart">
+            <div class="container mt-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="left">
+                            <h4>RULES</h4>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="container">
+      <p aria-hidden="true" >
+        <a class="placeholder-one col-6"><em class="ned">RULES</em> <em class="arg">SECTION</em> </a>
+      </p>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+          <div class="card" data-aos="fade-up"
+          data-aos-duration="1500">
+              
+              <div class="card-body">
+                <h5 class="card-title" style="color: #C8102E;">MATCH SETTINGS</h5>
+                <table class="table">
+                      <tr>
+                          <th >1.Match Type :- STANDARD <br>2.Match Duration :- 6min (Default) <br>3.Injuries :- ON (Default) <br>
+                            4.Extra-Time :- OFF  <br>5.Penalties :- OFF <br>6.Substitutions :- 5 (Default) <br>
+                            7.Interval :- 5 (Default) <br>8.Player Condition :- Random (Both) <br>9.Deadlines :- 12:00am - 11:59pm (48 Hrs Only)</th>
+                      </tr>
+                </table>
+                <h5 class="card-title" style="color: #C8102E;">TIME RULES</h5>
+                <table class="table">
+                      <tr>
+                          <th >-If Match disconnects Between 0-10 Game minutes, then players can start a fresh match again<br><br> 
+                            -If Match disconnects Between 11-45 Game minutes, then play the remaining time left with +3min Additional. <br><br>
+                            -If Match disconnects Between 46-90 Game minutes, then play the remaining time left with +4min Additional.</th>
+                      </tr>
+                </table>
+                <h5 class="card-title" style="color: #C8102E;">CLAIM RULES</h5>
+                <table class="table">
+                      <tr>
+                          <th >-Continous Backpass is strictly prohibited <br>(LB-CB-DMF-RB-GK). If opposition can provide video proof then rematch
+                            will be played. Without Video proof no claim will be given to anyone. <br><br>-Both the players should be responsible for their match completion.
+                            if someone provide Screenshot of opponent text that he/she is ignoring then the player will be awarded W/O.(*Screenshot after deadline will not be accepted 
+                            strictly) <br><br>-WalkOver will be 1-0 win and W/O Goals will not be counted in Golden Boot Award. <br><br>-If Opponent left in between the match after trailing goals and denied to play remaining the opposition will get goals
+                            according to below example:- (Suppose 20:00 played [Player 1 (2-0) Player 2], If Player 2 denies to play remaining the as per calculation Player 1 will get 9-0 win)</th>
+                      </tr>
+                </table>
+                <h5 class="card-title" style="color: #C8102E;">OTHER RULES</h5>
+                <table class="table">
+                      <tr>
+                          <th >-Time will be strictly maintained no extension in deadlines. If any Matches left after deadline then it will be 0-0. 
+                            Screenshots counter will be valid within deadline only.
+                            No Screenshots will be considered after deadline. <br><br>-6 Teams will be playing with each other Twice in Group League. Top 2 Teams will get the Qualification into eFOOTBALL MASTERS TROPHY AUCTION FINALS. <br><br>-Mis-Behaving with other players is stictly prohibited. {Punishment:- Yellow Card(for little misbehave) Red Card(for using slangs and will be kicked out of the tournament.)}
+                            <br><br>-All the Teams will meet each other at the group stage twice.</th>
+                      </tr>
+                </table>
+                
+          </div>
+        </div>
+      </div>
+
+      
+  
+      <p aria-hidden="true" >
+        <a class="placeholder-one col-6" href="index.html">GO BACK</a>
+      </p>
+    
+  </div>
+    </section>
+
+    <div id="share-bar" class="left animate" >
+      <ul class="sharing-providers circle" data-aos="zoom-out-up" data-aos-duration="2000">
+        <li class="whatsapp"><a href="https://wa.me/+918486516119" title="Share this page on Facebook" class="js-share" ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <footer id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mt-3 mb-3">
+            <h4>Rajat Owen</h4>
+                        <p>Main Admin</p>
+                        <p>Hosts</p>
+                        <p>Web Developer</p>
+                        <p>Organiser</p>
+          </div>
+          <div class="col-lg-4 mt-3 mb-0 ">
+            <h4>Contact</h4>
+                        <p>WhatsApp</p>
+          </div>
+          <div class="col-lg-4 mt-3 mb-3">
+            <h4>Credits</h4>
+                        <p>Football Soars</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      let loader = document.getElementById("pre-loader");
+
+          window.addEventListener("load", function(){
+              loader.style.display = "none";
+          })
+
+  </script>
+  </body>
 </html>

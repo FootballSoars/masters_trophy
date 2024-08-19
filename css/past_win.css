@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'efootball_stencilregular';
+    src: url('../font/efootballstencil-regular-webfont.woff') format('woff2'),
+         url('../font/efootballstencil-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'efootball_stencilregular';
+}
+#pre-loader{
+    background: rgba(0, 0, 0, 0.889);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e60000;
+    }
+    25%{
+        transform: rotate(90deg);
+        box-shadow: 1px 5px 2px #48ff00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #0037ff;
+    }
+    75%{
+        transform: rotate(270deg);
+        box-shadow: 1px 5px 2px #f2ff00;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #a900e6;
+    }
+}
+#ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(red, green, blue, 0.5);
+}
+span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+}
+body{
+    background: rgb(0, 108, 102);
+}
+.placeholder-one {
+    display: inline-block;
+    min-height: 3em;
+    color: #ffffff;
+    min-width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-image: linear-gradient(#140055,#3e2200);
+    vertical-align: middle;
+    cursor: wait;
+    text-decoration: none;   
+}
+.placeholder-two {
+    display: inline-block;
+    min-height: 3em;
+    color: #ffffff;
+    min-width: 40%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-image: linear-gradient(#140055,#3e2200);
+    vertical-align: middle;
+    cursor: wait;
+    text-decoration: none;   
+}
+
+.ned {
+    color: #FF671F;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.arg {
+    color: #6CACE4;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.fra{
+    color: #5f4afc;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.por{
+    color: #1fba00;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.esp{
+    color: #ffdd00;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.ger{
+    color: #cb0000;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.bg-body-tertiary{
+    background: rgb(207, 124, 0) !important;
+}
+.navbar-brand {
+    font-size: 2rem;
+    color: rgb(56, 55, 55);
+}
+.navbar-brand em {
+    font-style: normal;
+    font-size: 2rem;
+    color: rgb(63, 0, 86);
+}
+.navbar-nav a {
+    font-size: 1.5rem;
+    
+}
+.left h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+.dropdown-menu{
+    background: rgb(255, 181, 44);
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+#banner{
+    position: relative;
+}
+#banner img{
+    filter: brightness(40%);
+}
+#banner h5 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 6rem;
+    max-width: 100%;
+}
+#banner p{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+#carouselExampleAutoplaying{
+    position: relative;
+    margin-top: -4rem;
+}
+#share-bar {
+    display: block;
+    position: fixed;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+.sharing-providers{
+    margin: 0;
+    padding: 0;
+    transition: 1s all;
+}
+.sharing-providers > li {
+    border-radius: 50%;
+    margin-left: 0px;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 255, 0);
+    transition: 0.5s all;
+}
+.fa-brands {
+    color: rgb(35, 0, 95);
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+.card-body h5{
+    font-size: 1.3rem;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 ;
+    border: 2px solid #000000;
+}
+th{
+    text-align: center;
+    background: #ddd;
+    font-size: 18px;
+    padding: 0;
+    
+}
+footer {
+    background: rgb(0, 0, 57);
+}
+footer h4 {
+    color: rgb(255, 85, 0);
+}
+footer p{
+    color: white;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 992px) {
+    #carouselExampleAutoplaying{
+        position: relative;
+        margin-top: -4rem;
+    }
+    .bg-body-tertiary{
+        background: rgb(124, 207, 0) !important;
+    }
+    .dropdown-menu{
+        background: rgb(125, 255, 44);
+    }
+    #banner h5 {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+    #banner p{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+    footer h4  {
+        color: rgb(21, 255, 0);
+        text-align: center;
+    }
+    footer p{
+        color: white;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #carouselExampleAutoplaying{
+        position: relative;
+        margin-top: -4rem;
+    }
+    #banner h5 {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    #banner p{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+}
+@media only screen and (max-width: 576px) {
+    #carouselExampleAutoplaying{                                                                                                    
+        position: relative;
+        margin-top: -2rem;
+    }
+    #banner h5 {
+        margin-top: 1rem;
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
+        
+    }
+    #banner p{
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+}

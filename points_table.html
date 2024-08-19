@@ -1,315 +1,478 @@
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOTBALL SOARS MASTERS TROPHY</title>
-    <link rel="icon" href="images/fs.png">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MASTERS TROPHY</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/points_table.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" 
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-    <header class="top">
-        <div class="container">
-            <div class="logo">
-                <div class="image"></div>
-                <h1>FOOTBALL SOARS<br> MASTERS TROPHY</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Participants</a></li>
-                    <li><a href="#">Points Table</a></li>
-                    <li><a href="rules.html">Rules</a></li>
-                    <li><a href="matches_ko.html">Matches</a></li>
-                    <li style="padding-right: 0;"><a href="awards_live_les.html">Awards Live</a></li>
-                </ul>
-            </nav>
-        </div>
-     </header>
+  <body>
+    <!--Preloader-->
+    <div id="pre-loader">
+      <div id="ring"></div>
+      <span>Loading...</span>
+  </div>
 
-     <section id="box">
-        <div class="container_2">
-            <div class="box">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#" data-aos="fade-right" data-aos-duration="2000">Masters<em>Trophy</em></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 
-                <table>
-                    <tr>
-                        <th>Players</th>
-                        <th>P</th>
-                        <th>W</th>
-                        <th>D</th>
-                        <th>L</th>
-                        <th>GS-GC</th>
-                        <th>GD</th>
-                        <th>Pts</th>
-                    </tr>
-                </table>
-                <h2>GROUP-A</h2>
-                <table>
-                    <tr style="background: greenyellow;">
-                        <td>Sani(Q)</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>7-0</td>
-                        <td>7</td>
-                        <td>9</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Pratyush(Q)</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>6-3</td>
-                        <td>3</td>
-                        <td>6</td>
-                    </tr>
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Prabal</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>3-7</td>
-                        <td>-4</td>
-                        <td>3</td>
-                    </tr>
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Aritra</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>2-8</td>
-                        <td>-5</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-                <h2>GROUP-B</h2>
-                <table>
-                    <tr style="background: greenyellow;">
-                        <td>Lonewolf(Q)</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>6-1</td>
-                        <td>5</td>
-                        <td>7</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>EX Legd (Q)</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>6-2</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Animesh</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>1-6</td>
-                        <td>-5</td>
-                        <td>3</td>
-                    </tr>
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Samarpan</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>1-5</td>
-                        <td>-4</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-                <h2>GROUP-C</h2>
-                <table>
-                    <tr style="background: greenyellow;">
-                        <td>Prince(Q)</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>7-3</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Argha(Q)</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>4-4</td>
-                        <td>0</td>
-                        <td>4</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Sundara(Q)</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>4-4</td>
-                        <td>0</td>
-                        <td>4</td>
-                    </tr>
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Aranindya</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>5-9</td>
-                        <td>-4</td>
-                        <td>1</td>
-                    </tr>  
-                </table>
-                <h2>GROUP-D</h2>
-                <table>
-                    <tr style="background: greenyellow;">
-                        <td>Sujal(Q)</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>5-5</td>
-                        <td>0</td>
-                        <td>6</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Supriyo(Q)</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>5-1</td>
-                        <td>4</td>
-                        <td>5</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Deep(Q)</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>2-4</td>
-                        <td>-2</td>
-                        <td>4</td>
-                    </tr>
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Mainak</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>1-3</td>
-                        <td>-2</td>
-                        <td>1</td>
-                    </tr>
-                    
-                </table>
-                <h2>GROUP-E</h2>
-                <table>
-                    <tr style="background: greenyellow;">
-                        <td>Anjan(Q)</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>4-0</td>
-                        <td>4</td>
-                        <td>9</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Hulk(Q)</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>2-1</td>
-                        <td>1</td>
-                        <td>4</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Sayan(Q)</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1-2</td>
-                        <td>-1</td>
-                        <td>4</td>
-                    </tr>
-                    
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Surojit</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>0-4</td>
-                        <td>-4</td>
-                        <td>0</td>
-                    </tr>
-                    
-                </table>
-                <h2>GROUP-F</h2>
-                <table>
-                    <tr style="background: greenyellow;">
-                        <td>Aditya(Q)</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>6-2</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Soumyadip(Q)</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>4-5</td>
-                        <td>-2</td>
-                        <td>6</td>
-                    </tr>
-                    <tr style="background: greenyellow;">
-                        <td>Toji(Q)</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>4-3</td>
-                        <td>1</td>
-                        <td>4</td>
-                    </tr>
-                    <tr style="background: rgb(255, 28, 28)">
-                        <td>Arnab</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>0-4</td>
-                        <td>-4</td>
-                        <td>0</td>
-                    </tr>
-                </table>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Points Table</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="clips.html">Clips</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Match-Days
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="matchday1.html">Match-Day-1</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-2</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-3</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-4</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-5</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-6</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-7</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-8</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-9</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="alert('Not Available Right Now!')">Match-Day-10</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+    <section id="banner">
+        <div class="container-Fluid">
+                <img src="images/banner.jpg" alt="" class="img-fluid">
+            
+                <div class="card-img-overlay">
+                    <div class="container">
+                    <h5 class="card-title" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">WELCOME</h5>
+                    <p class="card-title" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">to Masters Trophy Website</p>
+                </div>
             </div>
         </div>
-     </section>
+    </section>
 
     
-</body>
+
+    <section>
+        <div class="chart">
+            <div class="container mt-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="left">
+                            <h4>POINTS TABLE</h4>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="container">
+      <p aria-hidden="true" >
+        <a class="placeholder-one col-6"><em class="ned">TABLE</em> <em class="arg">TALLY</em> </a>
+      </p>
+
+      <div class="row">
+
+    <!--RANK #1-->
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+          <div class="card" data-aos="fade-up"
+          data-aos-duration="1500">
+              
+              <div class="card-body" style="background-image: linear-gradient(#C8102E,#FFFFFF,#003DA5);">
+                <h5 class="card-title" style="color: #160048;">NETHERLANDS</h5>
+                <table class="table">
+                      <tr>
+                          <th >PLAYED</th>
+                          <th class="count">0</th>
+                      </tr>
+                      <tr>
+                        <th >WON</th>
+                        <th class="count">0</th>
+                      </tr>
+                      <tr>
+                        <th >DRAW</th>
+                        <th class="count">0</th>
+                    </tr>
+                    <tr>
+                      <th >LOST</th>
+                      <th class="count">0</th>
+                    </tr>
+                    <tr>
+                      <th >GOALS SCORED</th>
+                      <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >GOALS CONCEDE</th>
+                    <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >GOAL DIFFERENCE</th>
+                    <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >POINTS</th>
+                    <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >RANK</th>
+                  <th >-</th>
+                </tr>
+    
+              </table>
+                
+          </div>
+        </div>
+      </div>
+  <!--RANK #1-->
+      
+      <!--RANK #2-->
+      <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+        <div class="card" data-aos="fade-up"
+        data-aos-duration="1500">
+            
+            <div class="card-body" style="background-image: linear-gradient(#6CACE4,#FFB81C,#6CACE4);">
+              <h5 class="card-title" style="color: #040051;">ARGENTINA</h5>
+              <table class="table">
+                    <tr>
+                        <th >PLAYED</th>
+                        <th class="count">0</th>
+                    </tr>
+                    <tr>
+                      <th >WON</th>
+                      <th class="count">0</th>
+                    </tr>
+                    <tr>
+                      <th >DRAW</th>
+                      <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >LOST</th>
+                    <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >GOALS SCORED</th>
+                    <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >GOALS CONCEDE</th>
+                  <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >GOAL DIFFERENCE</th>
+                  <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >POINTS</th>
+                  <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >RANK</th>
+                <th >-</th>
+              </tr>
+  
+            </table>
+              
+        </div>
+      </div>
+    </div>
+<!--RANK #2-->
+
+    <!--RANK #3-->
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+      <div class="card" data-aos="fade-up"
+      data-aos-duration="1500">
+          
+          <div class="card-body" style="background-image: linear-gradient(#aa151b,#f1bf00,#aa151b);">
+            <h5 class="card-title" style="color: #ffffff;">SPAIN</h5>
+            <table class="table">
+                  <tr>
+                      <th >PLAYED</th>
+                      <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >WON</th>
+                    <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >DRAW</th>
+                    <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >LOST</th>
+                  <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >GOALS SCORED</th>
+                  <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOALS CONCEDE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOAL DIFFERENCE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >POINTS</th>
+                <th class="count">0</th>
+            </tr>
+            <tr>
+              <th >RANK</th>
+              <th >-</th>
+            </tr>
+
+          </table>
+            
+      </div>
+    </div>
+  </div>
+<!--RANK #3-->
+
+    <!--RANK #4-->
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+      <div class="card" data-aos="fade-up"
+      data-aos-duration="1500">
+          
+          <div class="card-body" style="background-image: linear-gradient(#ff0000,#FFCD00,#71C5E8,#012169);">
+            <h5 class="card-title" style="color: #20be00;">CROATIA</h5>
+            <table class="table">
+                  <tr>
+                      <th >PLAYED</th>
+                      <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >WON</th>
+                    <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >DRAW</th>
+                    <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >LOST</th>
+                  <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >GOALS SCORED</th>
+                  <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOALS CONCEDE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOAL DIFFERENCE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >POINTS</th>
+                <th class="count">0</th>
+            </tr>
+            <tr>
+              <th >RANK</th>
+              <th >-</th>
+            </tr>
+
+          </table>
+            
+      </div>
+    </div>
+  </div>
+<!--RANK #4-->
+
+    <!--RANK #5-->
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+      <div class="card" data-aos="fade-up"
+      data-aos-duration="1500">
+          
+          <div class="card-body" style="background-image: linear-gradient(to left, #C8102E,#FFFFFF,#003DA5);">
+            <h5 class="card-title" style="color: #003DA5;">FRANCE</h5>
+            <table class="table">
+                  <tr>
+                      <th >PLAYED</th>
+                      <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >WON</th>
+                    <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >DRAW</th>
+                    <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >LOST</th>
+                  <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >GOALS SCORED</th>
+                  <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOALS CONCEDE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOAL DIFFERENCE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >POINTS</th>
+                <th class="count">0</th>
+            </tr>
+            <tr>
+              <th >RANK</th>
+              <th >-</th>
+            </tr>
+
+          </table>
+            
+      </div>
+    </div>
+  </div>
+<!--RANK #5-->
+
+    <!--RANK #6-->
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+      <div class="card" data-aos="fade-up"
+      data-aos-duration="1500">
+          
+          <div class="card-body" style="background-image: linear-gradient(#000000,#DD0000,#FFCC00);">
+            <h5 class="card-title" style="color: #ff0077;">GERMANY</h5>
+            <table class="table">
+                  <tr>
+                      <th style="color: #898989;">PLAYED</th>
+                      <th style="color: #898989;" class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >WON</th>
+                    <th class="count">0</th>
+                  </tr>
+                  <tr>
+                    <th >DRAW</th>
+                    <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >LOST</th>
+                  <th class="count">0</th>
+                </tr>
+                <tr>
+                  <th >GOALS SCORED</th>
+                  <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOALS CONCEDE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >GOAL DIFFERENCE</th>
+                <th class="count">0</th>
+              </tr>
+              <tr>
+                <th >POINTS</th>
+                <th class="count">0</th>
+            </tr>
+            <tr>
+              <th >RANK</th>
+              <th >-</th>
+            </tr>
+
+          </table>
+            
+      </div>
+    </div>
+  </div>
+<!--RANK #6-->
+
+
+      <p aria-hidden="true" >
+        <a class="placeholder-one col-6" href="index.html">GO BACK</a>
+      </p>
+    
+  </div>
+    </section>
+
+    <div id="share-bar" class="left animate" >
+      <ul class="sharing-providers circle" data-aos="zoom-out-up" data-aos-duration="2000">
+        <li class="whatsapp"><a href="https://wa.me/+918486516119" title="Share this page on Facebook" class="js-share" ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <footer id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mt-3 mb-3">
+            <h4>Rajat Owen</h4>
+                        <p>Main Admin</p>
+                        <p>Hosts</p>
+                        <p>Web Developer</p>
+                        <p>Organiser</p>
+          </div>
+          <div class="col-lg-4 mt-3 mb-0 ">
+            <h4>Contact</h4>
+                        <p>WhatsApp</p>
+          </div>
+          <div class="col-lg-4 mt-3 mb-3">
+            <h4>Credits</h4>
+                        <p>Football Soars</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $('0').counterUp({
+          delay: 10,
+          time: 4000
+      });
+  </script>
+  <script>
+    let loader = document.getElementById("pre-loader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+
+</script>
+  </body>
 </html>
